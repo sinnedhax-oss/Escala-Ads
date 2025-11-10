@@ -3,11 +3,11 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  base: "./", // ✅ Corrige o carregamento de CSS e assets no Render
+  base: "",                      // ✅ corrige paths de CSS/JS no Render
   plugins: [react()],
   root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(__dirname, "dist"), // ✅ Gera o build na raiz (fora da pasta client)
+    outDir: path.resolve(__dirname, "dist"), // ✅ dist na raiz do repo
     emptyOutDir: true,
   },
   resolve: {
