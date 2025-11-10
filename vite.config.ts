@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(__dirname, "client", "dist"),
+    outDir: path.resolve(__dirname, "dist"), // ✅ Gera o build na raiz (fora da pasta client)
     emptyOutDir: true,
   },
   resolve: {
