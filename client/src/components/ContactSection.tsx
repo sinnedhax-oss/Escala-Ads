@@ -19,9 +19,9 @@ const contactInfo = [
 
 export default function ContactSection() {
   return (
-    <section className="py-16 md:py-24 px-4 bg-background" id="contato">
+    <section className="py-16 md:py-24 px-4 bg-white" id="contato">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center text-foreground mb-12" data-testid="text-contact-title">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center text-gray-900 mb-12" data-testid="text-contact-title">
           Contato
         </h2>
         
@@ -43,7 +43,7 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <div className="text-sm text-muted-foreground mb-1">{contact.label}</div>
+                  <div className="text-sm text-gray-500 mb-1">{contact.label}</div>
                   <div className="text-lg font-medium text-card-foreground" data-testid={`text-${contact.label.toLowerCase()}-value`}>
                     {contact.value}
                   </div>
